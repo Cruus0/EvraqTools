@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JPG'den PDF Oluştur - Ücretsiz Online | EvraqTools</title>
+  <meta name="description" content="JPG fotoğraflarınızı tek bir A4 PDF belgesine dönüştürün. Çoklu görsel yükleme, sıralama ve sayfa ayarı. Kayıtsız, ücretsiz ve tamamen güvenli.">
+  <meta name="keywords" content="jpg pdf çevirme, jpg to pdf, fotoğrafları pdf yapma, resimleri pdf yapma, çoklu jpg pdf birleştirme">
+  <meta name="author" content="EvraqTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://evraqtools.com/jpg-to-pdf.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evraqtools.com/jpg-to-pdf.html">
+  <meta property="og:title" content="JPG'den PDF Oluştur - Ücretsiz Online | EvraqTools">
+  <meta property="og:description" content="Fotoğraflarınızı anında düzenli ve kaliteli bir PDF dokümanına çevirin.">
+  <meta property="og:site_name" content="EvraqTools">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JPG → PDF Dönüştürücü | EvraqTools">
+  <meta name="twitter:description" content="Çoklu JPG fotoğraflarını tek tıklamayla PDF yapın.">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Global Stiller -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jsPDF CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "JPG to PDF Dönüştürücü",
+    "url": "https://evraqtools.com/jpg-to-pdf.html",
+    "description": "Birden çok fotoğraf ve görseli tarayıcıda tek ve düzenli bir PDF dokümanına çeviren ücretsiz web uygulaması.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "TRY"
+    }
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- Ortak Navbar -->
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-bold text-blue-600 flex items-center gap-2 hover:opacity-90 transition-opacity">
+        <span class="text-2xl" role="img" aria-label="Evrak ikonu">📄</span>
+        <span>EvraqTools</span>
+      </a>
+      <div class="flex items-center gap-3">
+        <span class="hidden sm:inline text-xs md:text-sm text-slate-500 font-medium bg-slate-100 px-3 py-1 rounded-full">Ücretsiz · Kayıtsız · Güvenli</span>
+        <a href="index.html" class="text-sm font-semibold text-blue-600 hover:text-blue-700 bg-blue-50 px-3.5 py-1.5 rounded-lg border border-blue-100 transition-colors">Tüm Araçlar</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow">
+    <!-- ADSENSE: Üst Reklam (728x90 veya responsive) -->
+    <div class="max-w-4xl mx-auto px-4 mt-4">
+      <div class="adsense-placeholder">
+        <span><!-- ADSENSE: Üst Reklam Alanı (728x90) --></span>
+      </div>
+    </div>
+
+    <!-- Başlık Bölümü -->
+    <section class="max-w-4xl mx-auto px-4 pt-6 pb-6 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold mb-3">
+        📑 Çoklu Görsel Birleştirme
+      </div>
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
+        JPG Fotoğraflardan PDF Oluştur
+      </h1>
+      <p class="text-slate-600 text-base max-w-2xl mx-auto">
+        Kimlik, sözleşme, makbuz veya taranmış evrak fotoğraflarınızı sıraya dizin, kenarlık ve sayfa düzenini ayarlayıp tek bir profesyonel A4 PDF dokümanı oluşturun.
+      </p>
+    </section>
+
+    <!-- Araç Bölümü -->
+    <section class="max-w-4xl mx-auto px-4 mb-10">
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-xl p-6 md:p-8">
+
+        <!-- Sürükle Bırak Alanı -->
+        <div id="dropzone" class="dropzone-area rounded-2xl p-8 md:p-10 text-center cursor-pointer mb-6">
+          <input type="file" id="file-input" accept="image/jpeg,image/png,image/webp,image/jpg" multiple class="hidden">
+          <div class="w-16 h-16 mx-auto bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-3xl mb-4">
+            📷
+          </div>
+          <h3 class="text-lg md:text-xl font-bold text-slate-800 mb-1">
+            Fotoğrafları Buraya Sürükleyin
+          </h3>
+          <p class="text-sm text-slate-500 mb-4">
+            Birden fazla JPG veya PNG fotoğrafı tek seferde seçebilirsiniz
+          </p>
+          <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-md transition-all">
+            Fotoğrafları Seçin
+          </button>
+          <p class="text-xs text-slate-400 mt-4">
+            🔒 Dosyalarınız cihazınızda kalır, sunucuya aktarılmaz.
+          </p>
+        </div>
+
+        <!-- Yüklenen Görseller ve Düzenleme Alanı -->
+        <div id="editor-area" class="hidden">
+          
+          <!-- Sayfa ve Çıktı Ayarları Çubuğu -->
+          <div class="bg-slate-50 rounded-2xl p-4 border border-slate-200 mb-6">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <!-- Yönlendirme -->
+              <div>
+                <label for="page-orientation" class="block text-xs font-bold text-slate-600 uppercase mb-1.5">Sayfa Yönü</label>
+                <select id="page-orientation" class="w-full text-sm bg-white border border-slate-200 rounded-lg p-2 text-slate-700 focus:ring-2 focus:ring-blue-500">
+                  <option value="auto" selected>Otomatik (Görsele Uygun)</option>
+                  <option value="p">Dikey (Portrait)</option>
+                  <option value="l">Yatay (Landscape)</option>
+                </select>
+              </div>
+
+              <!-- Kenarlık -->
+              <div>
+                <label for="page-margin" class="block text-xs font-bold text-slate-600 uppercase mb-1.5">Kenarlık (Margin)</label>
+                <select id="page-margin" class="w-full text-sm bg-white border border-slate-200 rounded-lg p-2 text-slate-700 focus:ring-2 focus:ring-blue-500">
+                  <option value="0">Kenarlıksız (Tam Sayfa)</option>
+                  <option value="10" selected>Dar Kenarlık (10 mm)</option>
+                  <option value="20">Standart Kenarlık (20 mm)</option>
+                </select>
+              </div>
+
+              <!-- Hızlı Eylemler -->
+              <div class="flex items-end gap-2">
+                <button type="button" id="add-more-btn" class="flex-1 bg-white hover:bg-slate-100 text-slate-700 text-xs font-semibold py-2.5 px-3 rounded-lg border border-slate-200 transition-colors">
+                  ➕ Fotoğraf Ekle
+                </button>
+                <button type="button" id="clear-all-btn" class="text-rose-600 hover:bg-rose-50 text-xs font-semibold py-2.5 px-3 rounded-lg border border-rose-200 transition-colors">
+                  Temizle
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Görsellerin Sıralanabilir Listesi -->
+          <div class="mb-6">
+            <div class="flex items-center justify-between mb-3">
+              <h4 class="font-bold text-slate-800 text-base">
+                Sayfa Sıralaması (<span id="file-count">0</span> Görsel)
+              </h4>
+              <span class="text-xs text-slate-500">Sıralamayı butonlarla veya sürükleyerek değiştirebilirsiniz</span>
+            </div>
+            
+            <div id="image-grid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              <!-- JS dinamik olarak kartları ekleyecek -->
+            </div>
+          </div>
+
+          <!-- PDF Oluşturma Butonu -->
+          <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="text-xs text-slate-500">
+              * A4 formatında yüksek çözünürlüklü çıktı üretilir.
+            </p>
+            <button id="generate-pdf-btn" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-blue-500/30 transition-all flex items-center justify-center gap-2">
+              <span>📑</span> <span>PDF Dokümanını Oluştur & İndir</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ADSENSE: Araçlar altı (336x280 veya responsive) -->
+    <div class="max-w-4xl mx-auto px-4 my-8">
+      <div class="adsense-placeholder">
+        <span><!-- ADSENSE: Araçlar Altı Reklam Alanı (336x280) --></span>
+      </div>
+    </div>
+
+    <!-- SEO Rehber İçerik (300+ Kelime) -->
+    <section class="max-w-4xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">
+          Fotoğrafları PDF Yapmanın Önemi ve Kullanım Alanları
+        </h2>
+        <div class="prose prose-slate max-w-none text-slate-600 text-sm leading-relaxed space-y-4">
+          <p>
+            Günlük hayatta tapu fotokopisi, kira sözleşmesi, banka dekontları, kimlik ön-arka yüzü veya taranmış sınav evrakları gibi belgelerin fotoğrafları ayrı ayrı JPG dosyaları olarak cep telefonlarımızda depolanır. Ancak kamu kurumlarına (E-Devlet, ÖSYM, MEBBİS) veya iş başvurularına evrak gönderirken her sayfayı ayrı bir resim olarak yüklemek hem sistemler tarafından reddedilir hem de karmaşık bir görüntü oluşturur.
+          </p>
+          <p>
+            <strong>JPG to PDF Çevirici</strong>, birden fazla fotoğrafı mantıksal bir sırayla sayfalandırarak dünya çapında standart kabul edilen tek bir PDF dosyasında birleştirir.
+          </p>
+
+          <h3 class="text-lg font-bold text-slate-800 pt-2">Resmi Başvurularda Dikkat Edilmesi Gereken İpuçları</h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><strong>Kimlik ve Ehliyet:</strong> Ön ve arka yüz fotoğraflarını aynı dokümanda art arda sayfalar olarak sıralayın.</li>
+            <li><strong>Sözleşmeler ve Raporlar:</strong> Sayfa numaralarına göre sırayı kontrol edin. Yukarı/Aşağı ok butonlarımızla sayfaları kolayca yer değiştirebilirsiniz.</li>
+            <li><strong>Kenarlık Ayarı:</strong> Belgelerinizin kenarlarında önemli yazı veya kaşe varsa "Dar Kenarlık (10 mm)" seçeneği baskı ve ekranda en profesyonel sonucu verir.</li>
+          </ul>
+
+          <h3 class="text-lg font-bold text-slate-800 pt-2">Sıkça Sorulan Sorular</h3>
+          <div class="space-y-3 mt-2">
+            <div>
+              <h4 class="font-semibold text-slate-900">En fazla kaç fotoğraf ekleyebilirim?</h4>
+              <p class="text-xs md:text-sm text-slate-600">Herhangi bir dosya adedi kısıtlaması yoktur. Cihazınızın belleğine bağlı olarak onlarca sayfayı tek bir PDF dokümanında birleştirebilirsiniz.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-slate-900">Fotoğraflarımı kimse görebilir mi?</h4>
+              <p class="text-xs md:text-sm text-slate-600">Kesinlikle hayır. İşlemler doğrudan tarayıcınızdaki JavaScript motoru ile yürütülür; fotoğraflarınız internet sunucularına aktarılmaz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ortak Footer -->
+  <footer class="bg-slate-800 text-white py-10 mt-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="font-bold text-lg mb-2">EvraqTools</p>
+      <p class="text-slate-400 text-sm mb-4">Resmi başvurular için ücretsiz dosya araçları</p>
+      <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
+        <a href="index.html" class="hover:text-white transition-colors">Ana Sayfa</a>
+        <a href="edevlet-pdf-kucult.html" class="hover:text-white transition-colors">E-Devlet PDF</a>
+        <a href="gorsel-kucult.html" class="hover:text-white transition-colors">Görsel Küçültme</a>
+        <a href="jpg-to-pdf.html" class="hover:text-white transition-colors">JPG → PDF</a>
+        <a href="png-to-jpg.html" class="hover:text-white transition-colors">PNG → JPG</a>
+        <a href="biyometrik-foto.html" class="hover:text-white transition-colors">Biyometrik Fotoğraf</a>
+        <a href="privacy-policy.html" class="hover:text-white transition-colors">Gizlilik Politikası</a>
+      </div>
+      <p class="text-slate-500 text-xs mt-6">© 2026 EvraqTools. Tüm işlemler tarayıcınızda yapılır.</p>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/jpg-to-pdf.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropzone = document.getElementById('dropzone');
+      const input = document.getElementById('file-input');
+      const editorArea = document.getElementById('editor-area');
+      const imageGrid = document.getElementById('image-grid');
+      const fileCountEl = document.getElementById('file-count');
+      const addMoreBtn = document.getElementById('add-more-btn');
+      const clearAllBtn = document.getElementById('clear-all-btn');
+      const generatePdfBtn = document.getElementById('generate-pdf-btn');
+      const orientationSelect = document.getElementById('page-orientation');
+      const marginSelect = document.getElementById('page-margin');
+
+      const converter = new JpgToPdfConverter();
+
+      EvraqUtils.setupDropzone(dropzone, input, async (files) => {
+        if (files && files.length > 0) {
+          await processFiles(files);
+        }
+      });
+
+      addMoreBtn.addEventListener('click', () => {
+        input.click();
+      });
+
+      async function processFiles(files) {
+        EvraqUtils.showToast('Görseller yükleniyor...', 'info', 1500);
+        await converter.addFiles(files);
+        renderGrid();
+        dropzone.classList.add('hidden');
+        editorArea.classList.remove('hidden');
+      }
+
+      function renderGrid() {
+        imageGrid.innerHTML = '';
+        fileCountEl.textContent = converter.items.length;
+
+        if (converter.items.length === 0) {
+          editorArea.classList.add('hidden');
+          dropzone.classList.remove('hidden');
+          return;
+        }
+
+        converter.items.forEach((item, index) => {
+          const card = document.createElement('div');
+          card.className = 'relative bg-white border border-slate-200 rounded-xl p-2 shadow-sm flex flex-col justify-between group';
+          card.draggable = true;
+          card.dataset.id = item.id;
+
+          card.innerHTML = `
+            <div class="relative aspect-[3/4] bg-slate-100 rounded-lg overflow-hidden mb-2 flex items-center justify-center">
+              <img src="${item.dataUrl}" alt="${item.name}" class="max-h-full max-w-full object-contain">
+              <span class="absolute top-1 left-1 bg-slate-900/80 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">
+                #${index + 1}
+              </span>
+              <button type="button" class="delete-btn absolute top-1 right-1 bg-rose-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs opacity-80 hover:opacity-100 transition-opacity" title="Kaldır">
+                ✕
+              </button>
+            </div>
+            <div class="text-[11px] text-slate-600 truncate font-medium px-1 mb-2">
+              ${item.name}
+            </div>
+            <div class="flex items-center justify-between border-t border-slate-100 pt-1.5 px-1">
+              <button type="button" class="move-up-btn text-xs text-slate-500 hover:text-blue-600 font-bold p-1 ${index === 0 ? 'opacity-30 cursor-not-allowed' : ''}" title="Yukarı / Öne Taşı">
+                ←
+              </button>
+              <span class="text-[10px] text-slate-400">${EvraqUtils.formatBytes(item.size, 1)}</span>
+              <button type="button" class="move-down-btn text-xs text-slate-500 hover:text-blue-600 font-bold p-1 ${index === converter.items.length - 1 ? 'opacity-30 cursor-not-allowed' : ''}" title="Aşağı / Arkaya Taşı">
+                →
+              </button>
+            </div>
+          `;
+
+          // Silme
+          card.querySelector('.delete-btn').addEventListener('click', () => {
+            converter.removeItem(item.id);
+            renderGrid();
+          });
+
+          // Öne taşı
+          const upBtn = card.querySelector('.move-up-btn');
+          if (index > 0) {
+            upBtn.addEventListener('click', () => {
+              converter.moveItem(item.id, 'up');
+              renderGrid();
+            });
+          }
+
+          // Arkaya taşı
+          const downBtn = card.querySelector('.move-down-btn');
+          if (index < converter.items.length - 1) {
+            downBtn.addEventListener('click', () => {
+              converter.moveItem(item.id, 'down');
+              renderGrid();
+            });
+          }
+
+          // HTML5 Drag & Drop desteği
+          card.addEventListener('dragstart', (e) => {
+            e.dataTransfer.setData('text/plain', item.id);
+          });
+
+          card.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            card.classList.add('ring-2', 'ring-blue-500');
+          });
+
+          card.addEventListener('dragleave', () => {
+            card.classList.remove('ring-2', 'ring-blue-500');
+          });
+
+          card.addEventListener('drop', (e) => {
+            e.preventDefault();
+            card.classList.remove('ring-2', 'ring-blue-500');
+            const draggedId = e.dataTransfer.getData('text/plain');
+            if (draggedId && draggedId !== item.id) {
+              const srcIdx = converter.items.findIndex(x => x.id === draggedId);
+              const targetIdx = index;
+              if (srcIdx !== -1) {
+                const [moved] = converter.items.splice(srcIdx, 1);
+                converter.items.splice(targetIdx, 0, moved);
+                renderGrid();
+              }
+            }
+          });
+
+          imageGrid.appendChild(card);
+        });
+      }
+
+      clearAllBtn.addEventListener('click', () => {
+        converter.clear();
+        input.value = '';
+        renderGrid();
+      });
+
+      generatePdfBtn.addEventListener('click', async () => {
+        if (converter.items.length === 0) {
+          EvraqUtils.showToast('Lütfen en az bir fotoğraf ekleyin.', 'error');
+          return;
+        }
+
+        generatePdfBtn.disabled = true;
+        generatePdfBtn.innerHTML = '<span>⏳</span> <span>PDF Hazırlanıyor...</span>';
+
+        try {
+          const doc = await converter.generatePdf({
+            orientation: orientationSelect.value,
+            margin: parseInt(marginSelect.value),
+            pageSize: 'a4'
+          });
+
+          doc.save('belgelerim_evraqtools.pdf');
+          EvraqUtils.showToast('PDF dokümanınız başarıyla indirildi!', 'success');
+        } catch (err) {
+          console.error(err);
+          EvraqUtils.showToast('PDF oluşturulurken hata: ' + err.message, 'error');
+        } finally {
+          generatePdfBtn.disabled = false;
+          generatePdfBtn.innerHTML = '<span>📑</span> <span>PDF Dokümanını Oluştur & İndir</span>';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

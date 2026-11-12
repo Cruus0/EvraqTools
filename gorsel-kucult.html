@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Görsel Boyutu Küçült - KB/MB Düşür (Kayıtsız) | EvraqTools</title>
+  <meta name="description" content="Fotoğraf ve resim boyutunu ücretsiz küçültün. KB ve MB düşürün, E-Devlet ve ÖSYM fotoğraf yükleme sınırlarına uyarlayın. Kayıtsız ve anında.">
+  <meta name="keywords" content="görsel boyutu küçültme, kb düşürme, resim sıkıştırma, fotoğraf boyutu küçült, e-devlet fotoğraf boyutu">
+  <meta name="author" content="EvraqTools">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://evraqtools.com/gorsel-kucult.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evraqtools.com/gorsel-kucult.html">
+  <meta property="og:title" content="Görsel Boyutu Küçült - KB/MB Düşür | EvraqTools">
+  <meta property="og:description" content="Resimlerinizin kalitesini koruyarak dosya boyutunu saniyeler içinde düşürün. Tarayıcınızda %100 güvenli.">
+  <meta property="og:site_name" content="EvraqTools">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fotoğraf ve Görsel Boyutu Küçültücü | EvraqTools">
+  <meta name="twitter:description" content="Kayıtsız, limitsiz ve güvenli görsel sıkıştırma aracı.">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Global Stiller -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Görsel Boyut Küçültücü",
+    "url": "https://evraqtools.com/gorsel-kucult.html",
+    "description": "Fotoğraf ve resim dosyalarını tarayıcı üzerinden güvenli bir şekilde sıkıştıran, KB ve MB cinsinden boyut düşüren ücretsiz araç.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "TRY"
+    }
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- Ortak Navbar -->
+  <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-bold text-blue-600 flex items-center gap-2 hover:opacity-90 transition-opacity">
+        <span class="text-2xl" role="img" aria-label="Evrak ikonu">📄</span>
+        <span>EvraqTools</span>
+      </a>
+      <div class="flex items-center gap-3">
+        <span class="hidden sm:inline text-xs md:text-sm text-slate-500 font-medium bg-slate-100 px-3 py-1 rounded-full">Ücretsiz · Kayıtsız · Güvenli</span>
+        <a href="index.html" class="text-sm font-semibold text-blue-600 hover:text-blue-700 bg-blue-50 px-3.5 py-1.5 rounded-lg border border-blue-100 transition-colors">Tüm Araçlar</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="flex-grow">
+    <!-- ADSENSE: Üst Reklam (728x90 veya responsive) -->
+    <div class="max-w-4xl mx-auto px-4 mt-4">
+      <div class="adsense-placeholder">
+        <span><!-- ADSENSE: Üst Reklam Alanı (728x90) --></span>
+      </div>
+    </div>
+
+    <!-- Başlık Bölümü -->
+    <section class="max-w-4xl mx-auto px-4 pt-6 pb-6 text-center">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold mb-3">
+        ⚡ JPG · PNG · WebP Destekli
+      </div>
+      <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
+        Fotoğraf ve Görsel Boyutunu Küçült
+      </h1>
+      <p class="text-slate-600 text-base max-w-2xl mx-auto">
+        Görsellerinizin piksel kalitesini koruyarak dosya boyutunu (KB ve MB) anında düşürün. E-Devlet, ÖSYM, e-posta veya web siteleri için tek tıkla optimize edin.
+      </p>
+    </section>
+
+    <!-- Araç Bölümü -->
+    <section class="max-w-4xl mx-auto px-4 mb-10">
+      <div class="bg-white rounded-3xl border border-slate-200 shadow-xl p-6 md:p-8">
+
+        <!-- Sürükle Bırak Alanı -->
+        <div id="dropzone" class="dropzone-area rounded-2xl p-8 md:p-12 text-center cursor-pointer mb-6">
+          <input type="file" id="file-input" accept="image/jpeg,image/png,image/webp,image/jpg" class="hidden">
+          <div class="w-16 h-16 mx-auto bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center text-3xl mb-4">
+            🖼️
+          </div>
+          <h3 class="text-lg md:text-xl font-bold text-slate-800 mb-1">
+            Görselinizi Buraya Sürükleyin
+          </h3>
+          <p class="text-sm text-slate-500 mb-4">
+            JPG, PNG veya WebP dosyanızı bırakın ya da seçin
+          </p>
+          <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-md transition-all">
+            Görsel Dosyası Seç
+          </button>
+          <p class="text-xs text-slate-400 mt-4">
+            🔒 Dosyalarınız cihazınızda kalır, sunucuya aktarılmaz.
+          </p>
+        </div>
+
+        <!-- Ayar ve Önizleme Alanı (Görsel seçilince görünür) -->
+        <div id="editor-area" class="hidden">
+          
+          <!-- Hızlı Hedef Butonları -->
+          <div class="mb-6 p-4 bg-slate-50 rounded-2xl border border-slate-200">
+            <span class="block text-xs font-bold text-slate-500 uppercase tracking-wider mb-2">
+              🎯 Hızlı Hedef Boyut Seçimi
+            </span>
+            <div class="flex flex-wrap gap-2">
+              <button type="button" class="preset-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white hover:bg-blue-50 text-slate-700 border border-slate-200 transition-all" data-target-kb="500">
+                🏛️ E-Devlet için (&lt; 500 KB)
+              </button>
+              <button type="button" class="preset-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white hover:bg-blue-50 text-slate-700 border border-slate-200 transition-all" data-target-kb="1000">
+                📧 E-posta için (&lt; 1 MB)
+              </button>
+              <button type="button" class="preset-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-white hover:bg-blue-50 text-slate-700 border border-slate-200 transition-all" data-target-kb="5000">
+                💬 WhatsApp için (&lt; 5 MB)
+              </button>
+              <button type="button" class="preset-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-blue-600 text-white border border-blue-600" data-quality="75">
+                ⚡ Dengeli (%75 Kalite)
+              </button>
+            </div>
+          </div>
+
+          <!-- Ayar Slider ve Seçenekler -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+              <div class="flex justify-between items-center mb-2">
+                <label for="quality-range" class="text-sm font-semibold text-slate-700">Sıkıştırma Kalitesi</label>
+                <span id="quality-display" class="text-sm font-bold text-blue-600">%75</span>
+              </div>
+              <input type="range" id="quality-range" min="10" max="100" value="75" class="w-full h-2 bg-slate-200 rounded-lg cursor-pointer">
+              <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                <span>Daha Küçük Boyut (%10)</span>
+                <span>En Yüksek Kalite (%100)</span>
+              </div>
+            </div>
+
+            <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+              <label for="max-dimension" class="block text-sm font-semibold text-slate-700 mb-2">Maksimum Genişlik/Yükseklik</label>
+              <select id="max-dimension" class="w-full text-sm bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <option value="original">Orijinal Çözünürlük (Boyutlandırma yok)</option>
+                <option value="2560">2560 px (2K QHD)</option>
+                <option value="1920" selected>1920 px (Full HD - Önerilen)</option>
+                <option value="1280">1280 px (HD - Hızlı Yükleme)</option>
+                <option value="800">800 px (Web & Formlar için İdeal)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Karşılaştırma Önizleme Kartı -->
+          <div class="bg-slate-50 rounded-2xl p-4 md:p-6 border border-slate-200 mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+              <!-- Orijinal -->
+              <div class="text-center">
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-slate-200 text-slate-700 mb-2">
+                  Orijinal Görsel
+                </span>
+                <div class="aspect-video bg-white rounded-xl border border-slate-200 overflow-hidden flex items-center justify-center p-2 mb-2 shadow-inner">
+                  <img id="preview-original" src="" alt="Orijinal Görsel Önizleme" class="max-h-full max-w-full object-contain">
+                </div>
+                <p id="original-meta" class="text-xs font-medium text-slate-500">Boyut: -- | -- x -- px</p>
+              </div>
+
+              <!-- Sıkıştırılmış -->
+              <div class="text-center">
+                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 mb-2">
+                  Sıkıştırılmış Sonuç
+                </span>
+                <div class="aspect-video bg-white rounded-xl border border-emerald-200 overflow-hidden flex items-center justify-center p-2 mb-2 shadow-inner">
+                  <img id="preview-compressed" src="" alt="Sıkıştırılmış Görsel Önizleme" class="max-h-full max-w-full object-contain">
+                </div>
+                <p id="compressed-meta" class="text-xs font-bold text-emerald-600">Boyut: -- | Tasarruf: --</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- İndirme ve Eylem Butonları -->
+          <div class="flex flex-wrap justify-center gap-3">
+            <button id="download-btn" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-7 py-3 rounded-xl shadow-lg shadow-emerald-600/30 transition-all flex items-center gap-2">
+              <span>📥</span> <span>Sıkıştırılmış Görseli İndir</span>
+            </button>
+            <button id="reset-btn" class="bg-white hover:bg-slate-100 text-slate-700 font-semibold px-5 py-3 rounded-xl border border-slate-300 transition-all">
+              Yeni Görsel Seç
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ADSENSE: Araçlar altı (336x280 veya responsive) -->
+    <div class="max-w-4xl mx-auto px-4 my-8">
+      <div class="adsense-placeholder">
+        <span><!-- ADSENSE: Araçlar Altı Reklam Alanı (336x280) --></span>
+      </div>
+    </div>
+
+    <!-- SEO Rehber ve İpuçları (300+ Kelime) -->
+    <section class="max-w-4xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-3xl border border-slate-200 p-8 shadow-sm">
+        <h2 class="text-2xl font-bold text-slate-900 mb-4">
+          Görsel Boyutu Küçültme ve KB Düşürme Hakkında Her Şey
+        </h2>
+        <div class="prose prose-slate max-w-none text-slate-600 text-sm leading-relaxed space-y-4">
+          <p>
+            Akıllı telefonların gelişmiş kamera lensleri (48 MP, 108 MP vb.) sayesinde çekilen tek bir fotoğraf 5 MB ile 25 MB arasında bir dosya boyutuna ulaşabilmektedir. Ancak resmi kurumların internet portalları, e-posta istemcileri ve sınav başvuru ekranları yüksek boyutlu fotoğrafları kabul etmez. Örneğin ÖSYM Aday İşlemleri Sistemi (AİS) vesikalık fotoğrafların en fazla birkaç yüz kilobayt olmasını isterken, E-Devlet kapısı ek evraklarda maksimum 2 MB veya 500 KB sınırı uygular.
+          </p>
+
+          <h3 class="text-lg font-bold text-slate-800 pt-2">Görsel Boyutu Nasıl Kalite Kaybetmeden Küçülür?</h3>
+          <p>
+            Görsel sıkıştırma işlemi iki ana teknikle gerçekleştirilir:
+          </p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li><strong>Piksel Optimizasyonu:</strong> İnsan gözünün ayırt edemeyeceği çok küçük renk tonu geçişleri matematiksel olarak birleştirilir. Bu işlem JPEG kalitesini %90 veya %75 seviyesine getirerek dosya boyutunu %70'e varan oranlarda azaltır.</li>
+            <li><strong>Çözünürlük Ölçekleme (Resize):</strong> 4000x3000 piksel boyutundaki devasa bir görseli bilgisayar veya telefon ekranlarının en yaygın standardı olan 1920x1080 piksele küçültmek, görüntüde herhangi bir bulanıklık yaratmadan dosya boyutunu 10 katına kadar düşürür.</li>
+          </ul>
+
+          <h3 class="text-lg font-bold text-slate-800 pt-2">Sıkça Sorulan Sorular</h3>
+          <div class="space-y-3 mt-2">
+            <div>
+              <h4 class="font-semibold text-slate-900">PNG dosyasını küçültürken şeffaflık kaybolur mu?</h4>
+              <p class="text-xs md:text-sm text-slate-600">PNG formatında sıkıştırma yapıldığında şeffaflık korunur. Ancak maksimum boyut tasarrufu için arka planı beyaz yaparak JPG formatına dönüştürmek isterseniz sitemizdeki <a href="png-to-jpg.html" class="text-blue-600 font-semibold underline">PNG'den JPG'ye Çevirici</a> aracını tercih edebilirsiniz.</p>
+            </div>
+            <div>
+              <h4 class="font-semibold text-slate-900">Resimlerimin gizliliği güvence altında mı?</h4>
+              <p class="text-xs md:text-sm text-slate-600">Evet. EvraqTools, HTML5 Canvas teknolojisi kullanarak tüm hesaplamaları doğrudan cihazınızın tarayıcısında çalıştırır. Fotoğraflarınız internet üzerinden hiçbir sunucuya yüklenmez.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Ortak Footer -->
+  <footer class="bg-slate-800 text-white py-10 mt-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="font-bold text-lg mb-2">EvraqTools</p>
+      <p class="text-slate-400 text-sm mb-4">Resmi başvurular için ücretsiz dosya araçları</p>
+      <div class="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
+        <a href="index.html" class="hover:text-white transition-colors">Ana Sayfa</a>
+        <a href="edevlet-pdf-kucult.html" class="hover:text-white transition-colors">E-Devlet PDF</a>
+        <a href="gorsel-kucult.html" class="hover:text-white transition-colors">Görsel Küçültme</a>
+        <a href="jpg-to-pdf.html" class="hover:text-white transition-colors">JPG → PDF</a>
+        <a href="png-to-jpg.html" class="hover:text-white transition-colors">PNG → JPG</a>
+        <a href="biyometrik-foto.html" class="hover:text-white transition-colors">Biyometrik Fotoğraf</a>
+        <a href="privacy-policy.html" class="hover:text-white transition-colors">Gizlilik Politikası</a>
+      </div>
+      <p class="text-slate-500 text-xs mt-6">© 2026 EvraqTools. Tüm işlemler tarayıcınızda yapılır.</p>
+    </div>
+  </footer>
+
+  <script src="js/utils.js"></script>
+  <script src="js/image-compress.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const dropzone = document.getElementById('dropzone');
+      const input = document.getElementById('file-input');
+      const editorArea = document.getElementById('editor-area');
+      const qualityRange = document.getElementById('quality-range');
+      const qualityDisplay = document.getElementById('quality-display');
+      const maxDimSelect = document.getElementById('max-dimension');
+      const previewOriginal = document.getElementById('preview-original');
+      const previewCompressed = document.getElementById('preview-compressed');
+      const originalMeta = document.getElementById('original-meta');
+      const compressedMeta = document.getElementById('compressed-meta');
+      const downloadBtn = document.getElementById('download-btn');
+      const resetBtn = document.getElementById('reset-btn');
+      const presetBtns = document.querySelectorAll('.preset-btn');
+
+      let currentFile = null;
+      let lastCompressedBlob = null;
+      let targetKbSelected = null;
+
+      EvraqUtils.setupDropzone(dropzone, input, (files) => {
+        if (files && files[0]) {
+          loadFile(files[0]);
+        }
+      });
+
+      async function loadFile(file) {
+        if (!file.type.startsWith('image/')) {
+          EvraqUtils.showToast('Lütfen geçerli bir görsel dosyası seçin (JPG, PNG, WebP).', 'error');
+          return;
+        }
+
+        currentFile = file;
+        const dataUrl = await EvraqUtils.readFileAsDataURL(file);
+        const img = await EvraqUtils.loadImage(dataUrl);
+
+        previewOriginal.src = dataUrl;
+        originalMeta.textContent = `Boyut: ${EvraqUtils.formatBytes(file.size)} | ${img.width} x ${img.height} px`;
+
+        dropzone.classList.add('hidden');
+        editorArea.classList.remove('hidden');
+
+        // İlk sıkıştırmayı çalıştır
+        await processCompression();
+      }
+
+      async function processCompression() {
+        if (!currentFile) return;
+
+        const quality = parseInt(qualityRange.value) / 100;
+        let maxWidth = 2560;
+        let maxHeight = 2560;
+
+        if (maxDimSelect.value !== 'original') {
+          maxWidth = parseInt(maxDimSelect.value);
+          maxHeight = parseInt(maxDimSelect.value);
+        }
+
+        let result;
+        if (targetKbSelected) {
+          result = await ImageCompressor.compressToTargetSize(currentFile, targetKbSelected, {
+            maxWidth,
+            maxHeight,
+            mimeType: currentFile.type === 'image/png' ? 'image/png' : 'image/jpeg'
+          });
+        } else {
+          result = await ImageCompressor.compress(currentFile, {
+            quality,
+            maxWidth,
+            maxHeight,
+            mimeType: currentFile.type === 'image/png' ? 'image/png' : 'image/jpeg'
+          });
+        }
+
+        lastCompressedBlob = result.blob;
+        previewCompressed.src = result.dataUrl;
+
+        const saving = result.savingPercent;
+        compressedMeta.textContent = `Boyut: ${EvraqUtils.formatBytes(result.newSize)} | Tasarruf: %${saving} (${result.width}x${result.height}px)`;
+      }
+
+      qualityRange.addEventListener('input', () => {
+        targetKbSelected = null;
+        presetBtns.forEach(b => b.classList.remove('bg-blue-600', 'text-white'));
+        qualityDisplay.textContent = `%${qualityRange.value}`;
+        processCompression();
+      });
+
+      maxDimSelect.addEventListener('change', () => {
+        processCompression();
+      });
+
+      presetBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          presetBtns.forEach(b => {
+            b.classList.remove('bg-blue-600', 'text-white');
+            b.classList.add('bg-white', 'text-slate-700');
+          });
+          btn.classList.remove('bg-white', 'text-slate-700');
+          btn.classList.add('bg-blue-600', 'text-white');
+
+          if (btn.dataset.targetKb) {
+            targetKbSelected = parseInt(btn.dataset.targetKb);
+          } else if (btn.dataset.quality) {
+            targetKbSelected = null;
+            qualityRange.value = btn.dataset.quality;
+            qualityDisplay.textContent = `%${btn.dataset.quality}`;
+          }
+          processCompression();
+        });
+      });
+
+      downloadBtn.addEventListener('click', () => {
+        if (!lastCompressedBlob || !currentFile) return;
+        const ext = currentFile.name.substring(currentFile.name.lastIndexOf('.'));
+        const newName = currentFile.name.replace(ext, '') + '_kucultulmus' + ext;
+        EvraqUtils.downloadBlob(lastCompressedBlob, newName);
+        EvraqUtils.showToast('Görsel indiriliyor...', 'success');
+      });
+
+      resetBtn.addEventListener('click', () => {
+        input.value = '';
+        currentFile = null;
+        lastCompressedBlob = null;
+        targetKbSelected = null;
+        editorArea.classList.add('hidden');
+        dropzone.classList.remove('hidden');
+      });
+    });
+  </script>
+</body>
+</html>
